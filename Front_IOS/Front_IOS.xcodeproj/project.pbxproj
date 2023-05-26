@@ -16,6 +16,8 @@
 		378E62772A20F73C00A14A21 /* Front_IOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62762A20F73C00A14A21 /* Front_IOSTests.swift */; };
 		378E62812A20F73C00A14A21 /* Front_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62802A20F73C00A14A21 /* Front_IOSUITests.swift */; };
 		378E62832A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */; };
+		378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62912A210E7700A14A21 /* RecordViewController.swift */; };
+		378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62932A210E8A00A14A21 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		378E627C2A20F73C00A14A21 /* Front_IOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Front_IOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		378E62802A20F73C00A14A21 /* Front_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Front_IOSUITests.swift; sourceTree = "<group>"; };
 		378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Front_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		378E62912A210E7700A14A21 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		378E62932A210E8A00A14A21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		378E625E2A20F73900A14A21 /* Front_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				378E62902A210E5C00A14A21 /* Record */,
+				378E628F2A210E1900A14A21 /* Home */,
 				378E625F2A20F73900A14A21 /* AppDelegate.swift */,
 				378E62612A20F73900A14A21 /* SceneDelegate.swift */,
 				378E62632A20F73900A14A21 /* ViewController.swift */,
@@ -125,6 +131,22 @@
 				378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */,
 			);
 			path = Front_IOSUITests;
+			sourceTree = "<group>";
+		};
+		378E628F2A210E1900A14A21 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				378E62932A210E8A00A14A21 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		378E62902A210E5C00A14A21 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				378E62912A210E7700A14A21 /* RecordViewController.swift */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */,
 				378E62642A20F73900A14A21 /* ViewController.swift in Sources */,
 				378E62602A20F73900A14A21 /* AppDelegate.swift in Sources */,
 				378E62622A20F73900A14A21 /* SceneDelegate.swift in Sources */,
+				378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

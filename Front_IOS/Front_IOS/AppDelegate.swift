@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func showMainViewController() {
-        let viewController = HomeViewController() // 적절히 ViewController의 초기화를 수행해야 함
+        let viewController = ViewController() // 적절히 ViewController의 초기화를 수행해야 함
 
         // 전환 애니메이션 등 설정 가능
 

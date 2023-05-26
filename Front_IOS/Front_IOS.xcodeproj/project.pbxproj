@@ -20,6 +20,14 @@
 		378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62932A210E8A00A14A21 /* HomeViewController.swift */; };
 		378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62952A210FE100A14A21 /* RecordTableViewCell.swift */; };
 		378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62962A210FE100A14A21 /* RecordTableViewCell.xib */; };
+		378E629B2A213E3A00A14A21 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E629A2A213E3A00A14A21 /* MoreViewController.swift */; };
+		378E629E2A214A8400A14A21 /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E629C2A214A8400A14A21 /* MoreCollectionViewCell.swift */; };
+		378E629F2A214A8400A14A21 /* MoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E629D2A214A8400A14A21 /* MoreCollectionViewCell.xib */; };
+		378E62A22A214F2900A14A21 /* MoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A02A214F2900A14A21 /* MoreTableViewCell.swift */; };
+		378E62A32A214F2900A14A21 /* MoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62A12A214F2900A14A21 /* MoreTableViewCell.xib */; };
+		378E62A62A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A42A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift */; };
+		378E62A72A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */; };
+		378E62A92A21518500A14A21 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A82A21518500A14A21 /* WebsiteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +65,14 @@
 		378E62932A210E8A00A14A21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		378E62952A210FE100A14A21 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
 		378E62962A210FE100A14A21 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
+		378E629A2A213E3A00A14A21 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		378E629C2A214A8400A14A21 /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		378E629D2A214A8400A14A21 /* MoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		378E62A02A214F2900A14A21 /* MoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewCell.swift; sourceTree = "<group>"; };
+		378E62A12A214F2900A14A21 /* MoreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreTableViewCell.xib; sourceTree = "<group>"; };
+		378E62A42A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHomeTravelCollectionViewCell.swift; sourceTree = "<group>"; };
+		378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtensionHomeTravelCollectionViewCell.xib; sourceTree = "<group>"; };
+		378E62A82A21518500A14A21 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +123,7 @@
 		378E625E2A20F73900A14A21 /* Front_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				378E62992A213E1C00A14A21 /* More */,
 				378E62902A210E5C00A14A21 /* Record */,
 				378E628F2A210E1900A14A21 /* Home */,
 				378E625F2A20F73900A14A21 /* AppDelegate.swift */,
@@ -153,6 +170,21 @@
 				378E62962A210FE100A14A21 /* RecordTableViewCell.xib */,
 			);
 			path = Record;
+			sourceTree = "<group>";
+		};
+		378E62992A213E1C00A14A21 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				378E629A2A213E3A00A14A21 /* MoreViewController.swift */,
+				378E629C2A214A8400A14A21 /* MoreCollectionViewCell.swift */,
+				378E629D2A214A8400A14A21 /* MoreCollectionViewCell.xib */,
+				378E62A02A214F2900A14A21 /* MoreTableViewCell.swift */,
+				378E62A12A214F2900A14A21 /* MoreTableViewCell.xib */,
+				378E62A42A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift */,
+				378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */,
+				378E62A82A21518500A14A21 /* WebsiteViewController.swift */,
+			);
+			path = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +291,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378E62A32A214F2900A14A21 /* MoreTableViewCell.xib in Resources */,
 				378E626C2A20F73C00A14A21 /* LaunchScreen.storyboard in Resources */,
+				378E629F2A214A8400A14A21 /* MoreCollectionViewCell.xib in Resources */,
 				378E62692A20F73C00A14A21 /* Assets.xcassets in Resources */,
 				378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */,
+				378E62A72A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib in Resources */,
 				378E62672A20F73900A14A21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				378E629B2A213E3A00A14A21 /* MoreViewController.swift in Sources */,
+				378E629E2A214A8400A14A21 /* MoreCollectionViewCell.swift in Sources */,
 				378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */,
 				378E62642A20F73900A14A21 /* ViewController.swift in Sources */,
 				378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */,
 				378E62602A20F73900A14A21 /* AppDelegate.swift in Sources */,
 				378E62622A20F73900A14A21 /* SceneDelegate.swift in Sources */,
+				378E62A92A21518500A14A21 /* WebsiteViewController.swift in Sources */,
+				378E62A22A214F2900A14A21 /* MoreTableViewCell.swift in Sources */,
 				378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */,
+				378E62A62A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,8 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate, UIPickerVi
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var searchButton: UIButton!
     
+    @IBOutlet weak var initLocationImage: UIImageView!
+    
     let numbers = Array(1...40)
     let locationManager = CLLocationManager()
     
@@ -24,6 +26,14 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate, UIPickerVi
         pickerView.delegate = self
         pickerView.dataSource = self
         settingButton()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(initLocationImageTapped))
+        initLocationImage.addGestureRecognizer(tapGesture)
+        initLocationImage.isUserInteractionEnabled = true
+        
+    }
+    @objc func initLocationImageTapped() {
+        // 위치 업데이트 재시작
+        locationManager.startUpdatingLocation()
     }
     func settingButton(){
         // 버튼의 둥근 모서리와 테두리 스타일 설정
@@ -72,5 +82,7 @@ class HomeViewController: UIViewController,CLLocationManagerDelegate, UIPickerVi
            let selectedNumber = numbers[row] // 선택된 행에 해당하는 숫자
            print(selectedNumber) // 선택된 숫자 출력 또는 원하는 로직을 수행
        }
+    
+
     
 }

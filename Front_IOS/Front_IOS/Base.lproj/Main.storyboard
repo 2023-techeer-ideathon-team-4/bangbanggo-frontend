@@ -19,9 +19,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="kdR-Hp-JKW" kind="relationship" relationship="viewControllers" id="1wu-8e-2HX"/>
                         <segue destination="GUI-4r-MV8" kind="relationship" relationship="viewControllers" id="bfh-dg-J7i"/>
                         <segue destination="ANq-XP-xSf" kind="relationship" relationship="viewControllers" id="cqT-C2-0Xk"/>
+                        <segue destination="COQ-fO-oql" kind="relationship" relationship="viewControllers" id="15z-GJ-SJC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LkS-ke-Den" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -76,6 +76,13 @@
                                 <rect key="frame" x="0.0" y="149" width="393" height="620"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="xuH-be-AUK">
+                                <rect key="frame" x="333" y="715" width="40" height="38.666666666666629"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PIG-sf-d8H"/>
+                                    <constraint firstAttribute="width" constant="40" id="aA0-z5-Mjo"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="en2-er-OGk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,8 +90,10 @@
                             <constraint firstAttribute="trailing" secondItem="er7-SQ-zNh" secondAttribute="trailing" constant="10" id="24b-7H-Dzu"/>
                             <constraint firstItem="FHW-Xc-1TJ" firstAttribute="top" secondItem="en2-er-OGk" secondAttribute="top" id="GGW-yH-sjx"/>
                             <constraint firstItem="4WX-Fr-cJV" firstAttribute="leading" secondItem="en2-er-OGk" secondAttribute="leading" id="HeU-Hp-y9N"/>
+                            <constraint firstItem="en2-er-OGk" firstAttribute="trailing" secondItem="xuH-be-AUK" secondAttribute="trailing" constant="20" id="IcD-Hu-b25"/>
                             <constraint firstItem="er7-SQ-zNh" firstAttribute="top" secondItem="FHW-Xc-1TJ" secondAttribute="top" id="JAi-AW-w0o"/>
                             <constraint firstItem="FHW-Xc-1TJ" firstAttribute="leading" secondItem="en2-er-OGk" secondAttribute="leading" constant="10" id="Lce-eS-EBn"/>
+                            <constraint firstItem="en2-er-OGk" firstAttribute="bottom" secondItem="xuH-be-AUK" secondAttribute="bottom" constant="15" id="QA9-AJ-9Ug"/>
                             <constraint firstItem="en2-er-OGk" firstAttribute="bottom" secondItem="4WX-Fr-cJV" secondAttribute="bottom" id="VAn-GY-f9o"/>
                             <constraint firstItem="er7-SQ-zNh" firstAttribute="leading" secondItem="tKO-ia-wkx" secondAttribute="leading" constant="10" id="WR4-hZ-r1V"/>
                             <constraint firstItem="en2-er-OGk" firstAttribute="trailing" secondItem="4WX-Fr-cJV" secondAttribute="trailing" id="WVc-uP-IMK"/>
@@ -93,6 +102,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="홈" id="lLH-ET-u3d"/>
                     <connections>
+                        <outlet property="initLocationImage" destination="xuH-be-AUK" id="nf2-mg-nCk"/>
                         <outlet property="mapView" destination="4WX-Fr-cJV" id="NHz-sE-wTJ"/>
                         <outlet property="pickerView" destination="vVf-D3-BVq" id="0tz-7r-2c4"/>
                         <outlet property="searchButton" destination="jtf-MX-ogf" id="BTR-g1-FRw"/>
@@ -100,7 +110,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwj-PC-gGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.74045801526711" y="185.91549295774649"/>
+            <point key="canvasLocation" x="1640.4580152671756" y="185.91549295774649"/>
         </scene>
         <!--기록페이지-->
         <scene sceneID="VCu-GW-4G2">
@@ -133,24 +143,59 @@
             </objects>
             <point key="canvasLocation" x="682" y="835"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="bJb-ar-wbw">
+        <!--View Controller-->
+        <scene sceneID="WyT-Tq-lPB">
             <objects>
-                <viewController id="kdR-Hp-JKW" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Itw-z6-cAT">
+                <viewController id="ybS-4G-uLB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cdK-HG-VTc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="jNI-cB-SeT"/>
+                        <viewLayoutGuide key="safeArea" id="ig2-YK-7hL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="NT7-Or-taF"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8nM-gi-PXE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2LL-1Y-cIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="714" y="-562"/>
+            <point key="canvasLocation" x="726" y="1456"/>
+        </scene>
+        <!--Website View Controller-->
+        <scene sceneID="WdY-gD-DVV">
+            <objects>
+                <viewController storyboardIdentifier="WebsiteViewController" id="ryA-jz-BUT" customClass="WebsiteViewController" customModule="Front_IOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaY-9W-xaW">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="io7-6S-XL3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k9X-6f-CkE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ywu-h7-6ZA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1640.4580152671756" y="-457.04225352112678"/>
+        </scene>
+        <!--더보기-->
+        <scene sceneID="wo5-Ud-00d">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="COQ-fO-oql" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="더보기" id="sPw-YU-QK3"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XMk-cT-Sq8">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ryA-jz-BUT" kind="relationship" relationship="rootViewController" id="KxD-DD-XgN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTd-43-aVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.74045801526711" y="-457.04225352112678"/>
         </scene>
     </scenes>
     <resources>
+        <image name="location.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

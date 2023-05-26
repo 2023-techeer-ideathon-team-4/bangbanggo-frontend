@@ -27,23 +27,23 @@
             </objects>
             <point key="canvasLocation" x="-297" y="-42"/>
         </scene>
-        <!--Item-->
+        <!--홈-->
         <scene sceneID="dVw-xT-ML0">
             <objects>
-                <viewController id="GUI-4r-MV8" sceneMemberID="viewController">
+                <viewController id="GUI-4r-MV8" customClass="HomeViewController" customModule="Front_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tKO-ia-wkx">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="en2-er-OGk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="lLH-ET-u3d"/>
+                    <tabBarItem key="tabBarItem" title="홈" id="lLH-ET-u3d"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zwj-PC-gGG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="714" y="186"/>
         </scene>
-        <!--Item-->
+        <!--기록페이지-->
         <scene sceneID="VCu-GW-4G2">
             <objects>
                 <viewController id="ANq-XP-xSf" sceneMemberID="viewController">
@@ -53,11 +53,11 @@
                         <viewLayoutGuide key="safeArea" id="0ak-cB-Fda"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="D7U-ne-nHw"/>
+                    <tabBarItem key="tabBarItem" title="기록페이지" id="D7U-ne-nHw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42E-Js-2w2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="766" y="957"/>
+            <point key="canvasLocation" x="682" y="835"/>
         </scene>
         <!--Item-->
         <scene sceneID="bJb-ar-wbw">

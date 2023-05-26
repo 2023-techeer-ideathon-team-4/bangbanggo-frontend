@@ -18,6 +18,8 @@
 		378E62832A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */; };
 		378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62912A210E7700A14A21 /* RecordViewController.swift */; };
 		378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62932A210E8A00A14A21 /* HomeViewController.swift */; };
+		378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62952A210FE100A14A21 /* RecordTableViewCell.swift */; };
+		378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62962A210FE100A14A21 /* RecordTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Front_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		378E62912A210E7700A14A21 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		378E62932A210E8A00A14A21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		378E62952A210FE100A14A21 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
+		378E62962A210FE100A14A21 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,8 @@
 			isa = PBXGroup;
 			children = (
 				378E62912A210E7700A14A21 /* RecordViewController.swift */,
+				378E62952A210FE100A14A21 /* RecordTableViewCell.swift */,
+				378E62962A210FE100A14A21 /* RecordTableViewCell.xib */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 			files = (
 				378E626C2A20F73C00A14A21 /* LaunchScreen.storyboard in Resources */,
 				378E62692A20F73C00A14A21 /* Assets.xcassets in Resources */,
+				378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */,
 				378E62672A20F73900A14A21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +289,7 @@
 			files = (
 				378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */,
 				378E62642A20F73900A14A21 /* ViewController.swift in Sources */,
+				378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */,
 				378E62602A20F73900A14A21 /* AppDelegate.swift in Sources */,
 				378E62622A20F73900A14A21 /* SceneDelegate.swift in Sources */,
 				378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */,

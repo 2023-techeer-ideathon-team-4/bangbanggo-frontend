@@ -9,13 +9,33 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+
+        // Launch Screen을 보여줄 윈도우 생성 및 설정
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = UIStoryboard(name: "LaunchScreen", bundle: nil).instantiateInitialViewController()
+        window?.makeKeyAndVisible()
+
+        // 1초 후에 실제 ViewController로 전환
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            self.showMainViewController()
+        }
+
         return true
     }
+
+    func showMainViewController() {
+        let viewController = HomeViewController() // 적절히 ViewController의 초기화를 수행해야 함
+
+        // 전환 애니메이션 등 설정 가능
+
+        // ViewController로 전환
+        window?.rootViewController = viewController
+    }
+
 
     // MARK: UISceneSession Lifecycle
 

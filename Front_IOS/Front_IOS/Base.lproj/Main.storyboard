@@ -46,14 +46,29 @@
         <!--기록페이지-->
         <scene sceneID="VCu-GW-4G2">
             <objects>
-                <viewController id="ANq-XP-xSf" sceneMemberID="viewController">
+                <viewController id="ANq-XP-xSf" customClass="RecordViewController" customModule="Front_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MaY-10-PwA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-po-Lm5">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="0ak-cB-Fda"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0ak-cB-Fda" firstAttribute="bottom" secondItem="2xC-po-Lm5" secondAttribute="bottom" id="Iy7-SJ-GTh"/>
+                            <constraint firstItem="2xC-po-Lm5" firstAttribute="top" secondItem="0ak-cB-Fda" secondAttribute="top" id="dg6-B4-RNw"/>
+                            <constraint firstItem="0ak-cB-Fda" firstAttribute="trailing" secondItem="2xC-po-Lm5" secondAttribute="trailing" id="dyr-ev-Lfd"/>
+                            <constraint firstItem="2xC-po-Lm5" firstAttribute="leading" secondItem="0ak-cB-Fda" secondAttribute="leading" id="xDh-nd-egq"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="기록페이지" id="D7U-ne-nHw"/>
+                    <connections>
+                        <outlet property="tableView" destination="2xC-po-Lm5" id="UXR-t1-UWM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42E-Js-2w2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

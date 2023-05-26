@@ -28,6 +28,7 @@
 		378E62A62A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A42A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift */; };
 		378E62A72A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */; };
 		378E62A92A21518500A14A21 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A82A21518500A14A21 /* WebsiteViewController.swift */; };
+		378E62AC2A215A6C00A14A21 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62AB2A215A6C00A14A21 /* SettingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		378E62A42A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHomeTravelCollectionViewCell.swift; sourceTree = "<group>"; };
 		378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtensionHomeTravelCollectionViewCell.xib; sourceTree = "<group>"; };
 		378E62A82A21518500A14A21 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
+		378E62AB2A215A6C00A14A21 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 		378E625E2A20F73900A14A21 /* Front_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				378E62AA2A21579F00A14A21 /* Setting */,
 				378E62992A213E1C00A14A21 /* More */,
 				378E62902A210E5C00A14A21 /* Record */,
 				378E628F2A210E1900A14A21 /* Home */,
@@ -185,6 +188,14 @@
 				378E62A82A21518500A14A21 /* WebsiteViewController.swift */,
 			);
 			path = More;
+			sourceTree = "<group>";
+		};
+		378E62AA2A21579F00A14A21 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				378E62AB2A215A6C00A14A21 /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +344,7 @@
 				378E62A22A214F2900A14A21 /* MoreTableViewCell.swift in Sources */,
 				378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */,
 				378E62A62A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.swift in Sources */,
+				378E62AC2A215A6C00A14A21 /* SettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

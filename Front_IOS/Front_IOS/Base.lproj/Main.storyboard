@@ -19,8 +19,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="GUI-4r-MV8" kind="relationship" relationship="viewControllers" id="bfh-dg-J7i"/>
                         <segue destination="ANq-XP-xSf" kind="relationship" relationship="viewControllers" id="cqT-C2-0Xk"/>
+                        <segue destination="GUI-4r-MV8" kind="relationship" relationship="viewControllers" id="bfh-dg-J7i"/>
+                        <segue destination="ybS-4G-uLB" kind="relationship" relationship="viewControllers" id="qmR-7f-1NJ"/>
                         <segue destination="COQ-fO-oql" kind="relationship" relationship="viewControllers" id="15z-GJ-SJC"/>
                     </connections>
                 </tabBarController>
@@ -100,7 +101,7 @@
                             <constraint firstItem="4WX-Fr-cJV" firstAttribute="top" secondItem="er7-SQ-zNh" secondAttribute="bottom" constant="10" id="xcu-jB-LNJ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="홈" id="lLH-ET-u3d"/>
+                    <tabBarItem key="tabBarItem" title="홈" image="map" catalog="system" id="lLH-ET-u3d"/>
                     <connections>
                         <outlet property="initLocationImage" destination="xuH-be-AUK" id="nf2-mg-nCk"/>
                         <outlet property="mapView" destination="4WX-Fr-cJV" id="NHz-sE-wTJ"/>
@@ -134,7 +135,7 @@
                             <constraint firstItem="2xC-po-Lm5" firstAttribute="leading" secondItem="0ak-cB-Fda" secondAttribute="leading" id="xDh-nd-egq"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="기록페이지" id="D7U-ne-nHw"/>
+                    <tabBarItem key="tabBarItem" title="기록페이지" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="D7U-ne-nHw"/>
                     <connections>
                         <outlet property="tableView" destination="2xC-po-Lm5" id="UXR-t1-UWM"/>
                     </connections>
@@ -143,20 +144,37 @@
             </objects>
             <point key="canvasLocation" x="682" y="835"/>
         </scene>
-        <!--View Controller-->
+        <!--설정-->
         <scene sceneID="WyT-Tq-lPB">
             <objects>
-                <viewController id="ybS-4G-uLB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingViewController" id="ybS-4G-uLB" customClass="SettingViewController" customModule="Front_IOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cdK-HG-VTc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zhh-oK-tVa">
+                                <rect key="frame" x="121" y="79" width="151" height="32"/>
+                                <segments>
+                                    <segment title="라이트모드"/>
+                                    <segment title="다크모드"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ig2-YK-7hL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Zhh-oK-tVa" firstAttribute="centerX" secondItem="cdK-HG-VTc" secondAttribute="centerX" id="BvD-Vy-Ntk"/>
+                            <constraint firstItem="Zhh-oK-tVa" firstAttribute="top" secondItem="ig2-YK-7hL" secondAttribute="top" constant="20" id="JaF-Dm-Y1m"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="설정" image="gearshape" catalog="system" id="9Tp-4W-S0T"/>
+                    <connections>
+                        <outlet property="modeSegmentControl" destination="Zhh-oK-tVa" id="Sa3-LQ-Aqf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LL-1Y-cIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="1456"/>
+            <point key="canvasLocation" x="682" y="1517"/>
         </scene>
         <!--Website View Controller-->
         <scene sceneID="WdY-gD-DVV">
@@ -178,7 +196,7 @@
         <scene sceneID="wo5-Ud-00d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="COQ-fO-oql" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="더보기" id="sPw-YU-QK3"/>
+                    <tabBarItem key="tabBarItem" title="더보기" image="square.and.arrow.up" catalog="system" id="sPw-YU-QK3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="XMk-cT-Sq8">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -195,8 +213,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="location.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>
+        <image name="map" catalog="system" width="128" height="112"/>
+        <image name="rectangle.and.pencil.and.ellipsis" catalog="system" width="128" height="80"/>
+        <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

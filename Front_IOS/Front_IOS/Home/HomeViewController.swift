@@ -2,68 +2,36 @@ import UIKit
 import MapKit
 import CoreLocation
 
-class HomeViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+class HomeViewController: UIViewController,CLLocationManagerDelegate {
 
-    private let mapView = MKMapView()
-    private let locationManager = CLLocationManager()
-    private var currentLocation: CLLocation?
-    private let centerButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.setTitle("Center", for: .normal)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        return button
-    }()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Map setup
-        mapView.frame = view.frame
-        mapView.delegate = self
-        view.addSubview(mapView)
-
-        // Button setup
-        centerButton.addTarget(self, action: #selector(centerButtonTapped), for: .touchUpInside)
-        view.addSubview(centerButton)
-        NSLayoutConstraint.activate([
-            centerButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-            centerButton.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor, constant: -10)
-        ])
-
-        // Request location permission
-        locationManager.requestWhenInUseAuthorization()
-
-        // Location manager setup
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.startUpdatingLocation()
-    }
-
-    @objc private func centerButtonTapped() {
-        guard let coordinate = locationManager.location?.coordinate else { return }
-        let region = MKCoordinateRegion(center: coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
-        mapView.setRegion(region, animated: true)
-    }
-
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let location = locations.last {
-            currentLocation = location
-            mapView.removeAnnotations(mapView.annotations)
+        @IBOutlet weak var mapView: MKMapView!
+        
+        let locationManager = CLLocationManager()
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            
+            // 위치 관리자 설정
+            locationManager.delegate = self
+            locationManager.requestWhenInUseAuthorization()
+            locationManager.startUpdatingLocation()
+            
+            mapView.showsUserLocation = true
+        }
+        
+        func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            guard let currentLocation = locations.last else { return }
+            
+            // 맵 뷰의 중심을 현재 위치로 설정
+            mapView.setCenter(currentLocation.coordinate, animated: true)
+            
+            // 현재 위치에 핀 추가
             let annotation = MKPointAnnotation()
-            annotation.coordinate = location.coordinate
+            annotation.coordinate = currentLocation.coordinate
+            annotation.title = "나의 위치"
             mapView.addAnnotation(annotation)
+            
+            // 위치 업데이트 중지
+            locationManager.stopUpdatingLocation()
         }
     }
-
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation {
-            return nil
-        }
-
-        let pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: String(describing: MKPinAnnotationView.self))
-        pinView.pinTintColor = .red
-        pinView.animatesDrop = true
-
-        return pinView
-    }
-}

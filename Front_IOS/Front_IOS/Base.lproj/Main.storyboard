@@ -121,24 +121,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2xC-po-Lm5">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="9AW-6D-sW4">
                                 <rect key="frame" x="0.0" y="59" width="393" height="710"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0ak-cB-Fda"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0ak-cB-Fda" firstAttribute="bottom" secondItem="2xC-po-Lm5" secondAttribute="bottom" id="Iy7-SJ-GTh"/>
-                            <constraint firstItem="2xC-po-Lm5" firstAttribute="top" secondItem="0ak-cB-Fda" secondAttribute="top" id="dg6-B4-RNw"/>
-                            <constraint firstItem="0ak-cB-Fda" firstAttribute="trailing" secondItem="2xC-po-Lm5" secondAttribute="trailing" id="dyr-ev-Lfd"/>
-                            <constraint firstItem="2xC-po-Lm5" firstAttribute="leading" secondItem="0ak-cB-Fda" secondAttribute="leading" id="xDh-nd-egq"/>
+                            <constraint firstItem="9AW-6D-sW4" firstAttribute="leading" secondItem="0ak-cB-Fda" secondAttribute="leading" id="KRF-rU-kjm"/>
+                            <constraint firstItem="9AW-6D-sW4" firstAttribute="top" secondItem="0ak-cB-Fda" secondAttribute="top" id="f69-0A-e1X"/>
+                            <constraint firstItem="0ak-cB-Fda" firstAttribute="bottom" secondItem="9AW-6D-sW4" secondAttribute="bottom" id="mfz-q9-Yho"/>
+                            <constraint firstItem="0ak-cB-Fda" firstAttribute="trailing" secondItem="9AW-6D-sW4" secondAttribute="trailing" id="q4K-VN-XWh"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="기록페이지" image="rectangle.and.pencil.and.ellipsis" catalog="system" id="D7U-ne-nHw"/>
-                    <connections>
-                        <outlet property="tableView" destination="2xC-po-Lm5" id="UXR-t1-UWM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="42E-Js-2w2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -174,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2LL-1Y-cIy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="682" y="1517"/>
+            <point key="canvasLocation" x="681.67938931297704" y="1516.9014084507044"/>
         </scene>
         <!--Website View Controller-->
         <scene sceneID="WdY-gD-DVV">
@@ -213,6 +209,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image 1" width="304" height="506"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
         <image name="location.circle" catalog="system" width="128" height="123"/>
         <image name="magnifyingglass" catalog="system" width="128" height="117"/>

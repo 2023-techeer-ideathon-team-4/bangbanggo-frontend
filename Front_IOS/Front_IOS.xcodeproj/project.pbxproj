@@ -18,8 +18,6 @@
 		378E62832A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */; };
 		378E62922A210E7700A14A21 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62912A210E7700A14A21 /* RecordViewController.swift */; };
 		378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62932A210E8A00A14A21 /* HomeViewController.swift */; };
-		378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62952A210FE100A14A21 /* RecordTableViewCell.swift */; };
-		378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62962A210FE100A14A21 /* RecordTableViewCell.xib */; };
 		378E629B2A213E3A00A14A21 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E629A2A213E3A00A14A21 /* MoreViewController.swift */; };
 		378E629E2A214A8400A14A21 /* MoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E629C2A214A8400A14A21 /* MoreCollectionViewCell.swift */; };
 		378E629F2A214A8400A14A21 /* MoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E629D2A214A8400A14A21 /* MoreCollectionViewCell.xib */; };
@@ -29,6 +27,7 @@
 		378E62A72A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */; };
 		378E62A92A21518500A14A21 /* WebsiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62A82A21518500A14A21 /* WebsiteViewController.swift */; };
 		378E62AC2A215A6C00A14A21 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62AB2A215A6C00A14A21 /* SettingViewController.swift */; };
+		378E62AF2A21642B00A14A21 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378E62AE2A21642B00A14A21 /* RecommendViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +63,6 @@
 		378E62822A20F73C00A14A21 /* Front_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Front_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		378E62912A210E7700A14A21 /* RecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
 		378E62932A210E8A00A14A21 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		378E62952A210FE100A14A21 /* RecordTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTableViewCell.swift; sourceTree = "<group>"; };
-		378E62962A210FE100A14A21 /* RecordTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordTableViewCell.xib; sourceTree = "<group>"; };
 		378E629A2A213E3A00A14A21 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		378E629C2A214A8400A14A21 /* MoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreCollectionViewCell.swift; sourceTree = "<group>"; };
 		378E629D2A214A8400A14A21 /* MoreCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MoreCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -75,6 +72,7 @@
 		378E62A52A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExtensionHomeTravelCollectionViewCell.xib; sourceTree = "<group>"; };
 		378E62A82A21518500A14A21 /* WebsiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebsiteViewController.swift; sourceTree = "<group>"; };
 		378E62AB2A215A6C00A14A21 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		378E62AE2A21642B00A14A21 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +123,7 @@
 		378E625E2A20F73900A14A21 /* Front_IOS */ = {
 			isa = PBXGroup;
 			children = (
+				378E62AD2A21639C00A14A21 /* Recommend */,
 				378E62AA2A21579F00A14A21 /* Setting */,
 				378E62992A213E1C00A14A21 /* More */,
 				378E62902A210E5C00A14A21 /* Record */,
@@ -169,8 +168,6 @@
 			isa = PBXGroup;
 			children = (
 				378E62912A210E7700A14A21 /* RecordViewController.swift */,
-				378E62952A210FE100A14A21 /* RecordTableViewCell.swift */,
-				378E62962A210FE100A14A21 /* RecordTableViewCell.xib */,
 			);
 			path = Record;
 			sourceTree = "<group>";
@@ -196,6 +193,14 @@
 				378E62AB2A215A6C00A14A21 /* SettingViewController.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		378E62AD2A21639C00A14A21 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				378E62AE2A21642B00A14A21 /* RecommendViewController.swift */,
+			);
+			path = Recommend;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,7 +311,6 @@
 				378E626C2A20F73C00A14A21 /* LaunchScreen.storyboard in Resources */,
 				378E629F2A214A8400A14A21 /* MoreCollectionViewCell.xib in Resources */,
 				378E62692A20F73C00A14A21 /* Assets.xcassets in Resources */,
-				378E62982A210FE100A14A21 /* RecordTableViewCell.xib in Resources */,
 				378E62A72A21510F00A14A21 /* ExtensionHomeTravelCollectionViewCell.xib in Resources */,
 				378E62672A20F73900A14A21 /* Main.storyboard in Resources */,
 			);
@@ -337,7 +341,7 @@
 				378E629E2A214A8400A14A21 /* MoreCollectionViewCell.swift in Sources */,
 				378E62942A210E8A00A14A21 /* HomeViewController.swift in Sources */,
 				378E62642A20F73900A14A21 /* ViewController.swift in Sources */,
-				378E62972A210FE100A14A21 /* RecordTableViewCell.swift in Sources */,
+				378E62AF2A21642B00A14A21 /* RecommendViewController.swift in Sources */,
 				378E62602A20F73900A14A21 /* AppDelegate.swift in Sources */,
 				378E62622A20F73900A14A21 /* SceneDelegate.swift in Sources */,
 				378E62A92A21518500A14A21 /* WebsiteViewController.swift in Sources */,

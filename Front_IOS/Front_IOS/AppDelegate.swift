@@ -13,6 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        if #available(iOS 13.0, *) {
+            // iOS 13 이상에서만 동작하는 코드
+            window?.overrideUserInterfaceStyle = .light
+        } else {
+            // iOS 13 미만에서는 밝은 모드로 설정
+            window?.backgroundColor = .white
+        }
 
         // Launch Screen을 보여줄 윈도우 생성 및 설정
         window = UIWindow(frame: UIScreen.main.bounds)
@@ -20,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.makeKeyAndVisible()
 
         // 1초 후에 실제 ViewController로 전환
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
             self.showMainViewController()
         }
 
@@ -28,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func showMainViewController() {
-        let viewController = HomeViewController() // 적절히 ViewController의 초기화를 수행해야 함
+        let viewController = ViewController() // 적절히 ViewController의 초기화를 수행해야 함
 
         // 전환 애니메이션 등 설정 가능
 
